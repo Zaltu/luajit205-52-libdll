@@ -8,6 +8,8 @@ which was also defined in the Unreal Engine "default" third-party library `libcu
 
 This repo contains a version of LuaJIT compiled *WITH THE `DLUAJIT_ENABLE_LUA52COMPAT` KEY*. That loads properly both when Hot-Reloading Unreal and Launching/Compiling from VS. This readme contains the solution I used and the steps I took to isolate and fix the problem.
 
+---
+
 ## Solution
 - Download the LuaJIT Windows source
 - Open the Makefile and
@@ -36,6 +38,7 @@ You now have a DLL and a LIB that links to it!
 - Visual Studio 2017
 - Masochism
 
+---
 
 ## Steps Taken
 This was honestly one of the most convoluted things I have experienced as a programmer, so I'll go over in detail how it all fit together.
