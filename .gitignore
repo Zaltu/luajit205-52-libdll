@@ -1,2 +1,2 @@
 # Don't actually upload the whole LuaJIT source. Licenses aside, Windows will fuck with the line endings and I have no idea if that will ruin everything.
-luajit205-52-dll/*
+luajit205-source/*
