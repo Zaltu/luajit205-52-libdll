@@ -19,7 +19,7 @@ This repo contains a version of LuaJIT compiled *WITH THE `DLUAJIT_ENABLE_LUA52C
 - Copy the `lua51.dll` file to another folder.
 - Using the `x64 Native Tools Comand Prompt for VS 2017`, export the external symbols found in the DLL
     - `dumpbin /EXPORTS lua51.dll > lua51.exports`
-- From the exports file, create a separate `.def` file pointing to the dll containing all the symbol references (dlltolib/lua51.def)
+- From the exports file, create a separate `.def` file pointing to the dll containing all the symbol references (liajit205-52-lib/lua51.def)
 - Using the `x64 Native Tools Comand Prompt for VS 2017`, generate the lib and exp files based on the def file
     - `lib /def:lua51.def /out:lua51.lib`
 
