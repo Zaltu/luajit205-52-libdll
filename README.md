@@ -54,9 +54,7 @@ luigihands
 In general, this was already a bad sign. These were two librarys who's source I had very little control over and they had confilcting symbols. As one of the stackoverflow posts I read put it:
 - First step: swear loudly
 
-```
-Note: I'm still completely clueless as to WHY the Unreal Editor's Hot-Reload with "Compile" worked, but building it from scrath did not. I can only assume that the order or manner in which the LIB/DLLs are parsed and added is different in the two cases, but I never found any documentation reguarding that. Which is on par with Unreal having terrible documentation as a whole.
-```
+`Note: I'm still completely clueless as to WHY the Unreal Editor's Hot-Reload with "Compile" worked, but building it from scrath did not. I can only assume that the order or manner in which the LIB/DLLs are parsed and added is different in the two cases, but I never found any documentation reguarding that. Which is on par with Unreal having terrible documentation as a whole.`
 
 I briefly looked in to the possibility of removing libcurl from Unreal's build. While it seems like it could be done, it would involve editing the engine source code. As someone completely new to Unreal, I was hesitant to make changes that could have an impact beyond my comprehension, and I had no idea how deep the dependency rabbit-hole went. So instead, I took a long hard look at my LuaJIT files.
 
